@@ -1,0 +1,66 @@
+{
+  "screen": 7,
+  "package": "com.instagram.android",
+  "activity": "com.instagram.mainactivity.InstagramMainActivity",
+  "capturedAt": "2026-10-27T09:19:13.007Z",
+  "locators": {
+    "primaryButtonRow": "id=com.instagram.android:id/primary_button_row",
+    "saveBtn": "id=com.instagram.android:id/primary_button",
+    "negativeButtonRow": "id=com.instagram.android:id/negative_button_row",
+    "notNowBtn": "id=com.instagram.android:id/negative_button"
+  },
+  "details": {
+    "primaryButtonRow": {
+      "selector": "id=com.instagram.android:id/primary_button_row",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.FrameLayout",
+      "resourceId": "com.instagram.android:id/primary_button_row",
+      "bounds": "[100,770][620,866]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.FrameLayout\").instance(3)"
+      ],
+      "verified": true
+    },
+    "saveBtn": {
+      "selector": "id=com.instagram.android:id/primary_button",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.Button",
+      "text": "Save",
+      "resourceId": "com.instagram.android:id/primary_button",
+      "bounds": "[140,770][580,866]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").text(\"Save\")",
+        "android=new UiSelector().className(\"android.widget.Button\").instance(0)"
+      ],
+      "verified": true
+    },
+    "negativeButtonRow": {
+      "selector": "id=com.instagram.android:id/negative_button_row",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.FrameLayout",
+      "resourceId": "com.instagram.android:id/negative_button_row",
+      "bounds": "[100,867][620,963]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.FrameLayout\").instance(4)"
+      ],
+      "verified": true
+    },
+    "notNowBtn": {
+      "selector": "id=com.instagram.android:id/negative_button",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.Button",
+      "text": "Not now",
+      "resourceId": "com.instagram.android:id/negative_button",
+      "bounds": "[140,867][580,963]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").text(\"Not now\")",
+        "android=new UiSelector().className(\"android.widget.Button\").instance(1)"
+      ],
+      "verified": true
+    }
+  }
+}

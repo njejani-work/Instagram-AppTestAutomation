@@ -1,0 +1,20 @@
+<!doctype html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Test evidence</title><style>
+:root{--bg:#f6f7f9;--card:#fff;--fg:#1d2330;--muted:#6b7280;--ok:#13804b;--bad:#c0262d;--line:#e3e6eb}
+@media (prefers-color-scheme:dark){:root{--bg:#14161a;--card:#1d2026;--fg:#e8eaee;--muted:#9aa1ad;--ok:#3ccf83;--bad:#ff6b6b;--line:#2c3038}}
+*{box-sizing:border-box}body{margin:0;font:14px/1.45 system-ui,sans-serif;background:var(--bg);color:var(--fg);padding:24px}
+h1{margin:0 0 4px}h2{margin:32px 0 8px;display:flex;gap:10px;align-items:center}.muted{color:var(--muted)}
+.badge{font-size:12px;padding:2px 8px;border-radius:99px;color:#fff}.passed{background:var(--ok)}.failed{background:var(--bad)}
+.err{color:var(--bad);white-space:pre-wrap;font-family:ui-monospace,monospace;font-size:12px;margin:4px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.step.failed{border-color:var(--bad)}.step img{width:100%;display:block;background:#000;cursor:zoom-in}
+.cap{padding:8px 10px}.cap b{display:block}.cap small{color:var(--muted)}
+nav a{display:block;padding:10px 12px;margin:6px 0;background:var(--card);border:1px solid var(--line);border-radius:8px;color:inherit;text-decoration:none}
+dialog{border:0;padding:0;background:transparent;max-width:95vw}dialog img{max-height:92vh;max-width:95vw;display:block}
+dialog::backdrop{background:rgba(0,0,0,.8)}</style></head>
+<body><h1>Test evidence</h1><nav><a href="login/index.html"><span class="badge failed">failed</span>
+      <b style="margin-left:8px">Login</b> <span class="muted">· 1 tests · 2026-10-27T10:59:06.658Z</span>
+      <div class="muted" style="margin-top:4px">✗ logs in with valid credentials</div></a><a href="login-to-logout/index.html"><span class="badge passed">passed</span>
+      <b style="margin-left:8px">Login to logout</b> <span class="muted">· 1 tests · 2026-10-27T12:09:45.332Z</span>
+      <div class="muted" style="margin-top:4px">✓ logs in, visits home and profile, then logs out</div></a></nav></body></html>

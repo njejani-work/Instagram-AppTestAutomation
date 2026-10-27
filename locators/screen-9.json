@@ -1,0 +1,73 @@
+{
+  "screen": 9,
+  "package": "com.instagram.android",
+  "activity": "com.instagram.modal.ModalActivity",
+  "capturedAt": "2026-10-27T09:19:39.694Z",
+  "locators": {
+    "settingsBtn": "~Settings",
+    "buttonBtn": "android=new UiSelector().className(\"android.widget.Button\").instance(2)",
+    "continueBtn": "android=new UiSelector().className(\"android.widget.Button\").description(\"Continue\")",
+    "useAnotherProfileBtn": "android=new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")",
+    "createNewAccountBtn": "android=new UiSelector().className(\"android.widget.Button\").description(\"Create new account\")"
+  },
+  "details": {
+    "settingsBtn": {
+      "selector": "~Settings",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.widget.Button",
+      "contentDesc": "Settings",
+      "bounds": "[640,115][688,163]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").description(\"Settings\")",
+        "android=new UiSelector().className(\"android.widget.Button\").instance(0)"
+      ],
+      "verified": true
+    },
+    "buttonBtn": {
+      "selector": "android=new UiSelector().className(\"android.widget.Button\").instance(2)",
+      "strategy": "uiautomator (index, fragile)",
+      "unique": true,
+      "class": "android.widget.Button",
+      "bounds": "[200,298][520,618]",
+      "alternatives": [],
+      "verified": true
+    },
+    "continueBtn": {
+      "selector": "android=new UiSelector().className(\"android.widget.Button\").description(\"Continue\")",
+      "strategy": "uiautomator",
+      "unique": true,
+      "class": "android.widget.Button",
+      "contentDesc": "Continue",
+      "bounds": "[32,788][688,876]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").instance(3)"
+      ],
+      "verified": true
+    },
+    "useAnotherProfileBtn": {
+      "selector": "android=new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")",
+      "strategy": "uiautomator",
+      "unique": true,
+      "class": "android.widget.Button",
+      "contentDesc": "Use another profile",
+      "bounds": "[197,900][524,972]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").instance(4)"
+      ],
+      "verified": true
+    },
+    "createNewAccountBtn": {
+      "selector": "android=new UiSelector().className(\"android.widget.Button\").description(\"Create new account\")",
+      "strategy": "uiautomator",
+      "unique": true,
+      "class": "android.widget.Button",
+      "contentDesc": "Create new account",
+      "bounds": "[32,1034][688,1121]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").instance(5)"
+      ],
+      "verified": true
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "screen": 2,
+  "package": "com.instagram.android",
+  "activity": "com.instagram.modal.ModalActivity",
+  "capturedAt": "2026-10-27T09:17:38.926Z",
+  "locators": {
+    "saveBtn": "android=new UiSelector().className(\"android.widget.Button\").description(\"Save\")",
+    "notNowBtn": "android=new UiSelector().className(\"android.widget.Button\").description(\"Not now\")"
+  },
+  "details": {
+    "saveBtn": {
+      "selector": "android=new UiSelector().className(\"android.widget.Button\").description(\"Save\")",
+      "strategy": "uiautomator",
+      "unique": true,
+      "class": "android.widget.Button",
+      "contentDesc": "Save",
+      "bounds": "[52,980][668,1068]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").instance(0)"
+      ],
+      "verified": true
+    },
+    "notNowBtn": {
+      "selector": "android=new UiSelector().className(\"android.widget.Button\").description(\"Not now\")",
+      "strategy": "uiautomator",
+      "unique": true,
+      "class": "android.widget.Button",
+      "contentDesc": "Not now",
+      "bounds": "[52,1092][668,1180]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").instance(1)"
+      ],
+      "verified": true
+    }
+  }
+}

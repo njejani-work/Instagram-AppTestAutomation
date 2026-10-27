@@ -1,0 +1,40 @@
+{
+  "name": "instagram-appium-tests",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.js",
+    "test": "wdio run ./wdio.conf.js",
+    "test:smoke": "wdio run ./wdio.conf.js --suite smoke",
+    "test:login": "wdio run ./wdio.conf.js --suite login",
+    "test:flow": "wdio run ./wdio.conf.js --suite flow",
+    "test:home": "wdio run ./wdio.conf.js --suite home",
+    "test:profile": "wdio run ./wdio.conf.js --suite profile",
+    "test:menu": "wdio run ./wdio.conf.js --suite menu",
+    "test:spec": "wdio run ./wdio.conf.js --spec",
+    "test:valid": "wdio run ./wdio.conf.js --spec ./test/specs/login.e2e.js --mochaOpts.grep \"logs in with valid credentials\"",
+    "test:invalid": "wdio run ./wdio.conf.js --spec ./test/specs/login.e2e.js --mochaOpts.grep \"invalid credentials\"",
+    "locators": "node ./tools/find-locators.mjs",
+    "locators:file": "node ./tools/find-locators.mjs --file",
+    "report:allure": "allure generate ./allure-results --clean -o ./reports/allure && allure open ./reports/allure",
+    "report:evidence": "node ./tools/open-report.mjs",
+    "clean": "node -e \"for (const d of ['allure-results','reports','logs']) require('node:fs').rmSync(d,{recursive:true,force:true})\"",
+    "appium:doctor": "appium driver doctor uiautomator2",
+    "devices": "adb devices -l"
+  },
+  "dependencies": {
+    "webdriverio": "^10.1.0"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^10.1.0",
+    "@wdio/appium-service": "^10.1.0",
+    "@wdio/cli": "^10.1.0",
+    "@wdio/junit-reporter": "^10.1.0",
+    "@wdio/local-runner": "^10.1.0",
+    "@wdio/mocha-framework": "^10.1.0",
+    "@wdio/spec-reporter": "^10.1.0",
+    "allure-commandline": "^2.29.0",
+    "appium-uiautomator2-driver": "^8.7.2"
+  }
+}

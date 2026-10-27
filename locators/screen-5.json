@@ -1,0 +1,115 @@
+{
+  "screen": 5,
+  "package": "com.instagram.android",
+  "activity": "com.instagram.mainactivity.InstagramMainActivity",
+  "capturedAt": "2026-10-27T09:18:53.922Z",
+  "locators": {
+    "backBtn": "~Back",
+    "searchInput": "//android.widget.EditText[@password='false']",
+    "metaAccountPasswordSecurity": "android=new UiSelector().className(\"android.view.View\").instance(6)",
+    "saved": "android=new UiSelector().className(\"android.view.View\").instance(11)",
+    "archive": "android=new UiSelector().className(\"android.view.View\").instance(15)",
+    "yourActivity": "android=new UiSelector().className(\"android.view.View\").instance(19)",
+    "notifications": "android=new UiSelector().className(\"android.view.View\").instance(23)",
+    "timeManagement": "android=new UiSelector().className(\"android.view.View\").instance(27)",
+    "instagramForTablets": "android=new UiSelector().className(\"android.view.View\").instance(31)"
+  },
+  "details": {
+    "backBtn": {
+      "selector": "~Back",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.widget.Button",
+      "contentDesc": "Back",
+      "bounds": "[8,56][104,152]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").description(\"Back\")",
+        "android=new UiSelector().className(\"android.widget.Button\").instance(0)"
+      ],
+      "verified": true
+    },
+    "searchInput": {
+      "selector": "//android.widget.EditText[@password='false']",
+      "strategy": "xpath",
+      "unique": true,
+      "class": "android.widget.EditText",
+      "label": "Search",
+      "bounds": "[32,168][688,264]",
+      "alternatives": [
+        "//*[@text='Search']/ancestor::*[@clickable='true'][1]",
+        "android=new UiSelector().className(\"android.widget.EditText\").instance(0)"
+      ],
+      "verified": true
+    },
+    "metaAccountPasswordSecurity": {
+      "selector": "android=new UiSelector().className(\"android.view.View\").instance(6)",
+      "strategy": "uiautomator (index, fragile)",
+      "unique": true,
+      "class": "android.view.View",
+      "label": "Meta Account, Password, security, personal details, cross-profile experiences, ad preferences",
+      "bounds": "[0,362][720,570]",
+      "alternatives": [],
+      "verified": true
+    },
+    "saved": {
+      "selector": "android=new UiSelector().className(\"android.view.View\").instance(11)",
+      "strategy": "uiautomator (index, fragile)",
+      "unique": true,
+      "class": "android.view.View",
+      "label": "Saved",
+      "bounds": "[0,672][720,768]",
+      "alternatives": [],
+      "verified": true
+    },
+    "archive": {
+      "selector": "android=new UiSelector().className(\"android.view.View\").instance(15)",
+      "strategy": "uiautomator (index, fragile)",
+      "unique": true,
+      "class": "android.view.View",
+      "label": "Archive",
+      "bounds": "[0,768][720,864]",
+      "alternatives": [],
+      "verified": true
+    },
+    "yourActivity": {
+      "selector": "android=new UiSelector().className(\"android.view.View\").instance(19)",
+      "strategy": "uiautomator (index, fragile)",
+      "unique": true,
+      "class": "android.view.View",
+      "label": "Your activity",
+      "bounds": "[0,864][720,960]",
+      "alternatives": [],
+      "verified": true
+    },
+    "notifications": {
+      "selector": "android=new UiSelector().className(\"android.view.View\").instance(23)",
+      "strategy": "uiautomator (index, fragile)",
+      "unique": true,
+      "class": "android.view.View",
+      "label": "Notifications",
+      "bounds": "[0,960][720,1056]",
+      "alternatives": [],
+      "verified": true
+    },
+    "timeManagement": {
+      "selector": "android=new UiSelector().className(\"android.view.View\").instance(27)",
+      "strategy": "uiautomator (index, fragile)",
+      "unique": true,
+      "class": "android.view.View",
+      "label": "Time management",
+      "bounds": "[0,1056][720,1152]",
+      "alternatives": [],
+      "verified": true
+    },
+    "instagramForTablets": {
+      "selector": "android=new UiSelector().className(\"android.view.View\").instance(31)",
+      "strategy": "uiautomator (index, fragile)",
+      "unique": true,
+      "class": "android.view.View",
+      "label": "Instagram for tablets",
+      "bounds": "[0,1152][720,1232]",
+      "alternatives": [],
+      "verified": true
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Login to logout",
+  "slug": "login-to-logout",
+  "start": "2026-10-27T12:09:45.332Z",
+  "tests": [
+    {
+      "title": "logs in, visits home and profile, then logs out",
+      "status": "passed",
+      "duration": 125791,
+      "steps": 14
+    }
+  ]
+}

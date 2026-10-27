@@ -1,0 +1,66 @@
+{
+  "screen": 8,
+  "package": "com.instagram.android",
+  "activity": "com.instagram.mainactivity.InstagramMainActivity",
+  "capturedAt": "2026-10-27T09:19:24.394Z",
+  "locators": {
+    "primaryButtonRow": "id=com.instagram.android:id/primary_button_row",
+    "logOutBtn": "id=com.instagram.android:id/primary_button",
+    "negativeButtonRow": "id=com.instagram.android:id/negative_button_row",
+    "cancelBtn": "id=com.instagram.android:id/negative_button"
+  },
+  "details": {
+    "primaryButtonRow": {
+      "selector": "id=com.instagram.android:id/primary_button_row",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.FrameLayout",
+      "resourceId": "com.instagram.android:id/primary_button_row",
+      "bounds": "[100,661][620,757]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.FrameLayout\").instance(3)"
+      ],
+      "verified": true
+    },
+    "logOutBtn": {
+      "selector": "id=com.instagram.android:id/primary_button",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.Button",
+      "text": "Log out",
+      "resourceId": "com.instagram.android:id/primary_button",
+      "bounds": "[140,661][580,757]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").text(\"Log out\")",
+        "android=new UiSelector().className(\"android.widget.Button\").instance(0)"
+      ],
+      "verified": true
+    },
+    "negativeButtonRow": {
+      "selector": "id=com.instagram.android:id/negative_button_row",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.FrameLayout",
+      "resourceId": "com.instagram.android:id/negative_button_row",
+      "bounds": "[100,758][620,854]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.FrameLayout\").instance(4)"
+      ],
+      "verified": true
+    },
+    "cancelBtn": {
+      "selector": "id=com.instagram.android:id/negative_button",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.Button",
+      "text": "Cancel",
+      "resourceId": "com.instagram.android:id/negative_button",
+      "bounds": "[140,758][580,854]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").text(\"Cancel\")",
+        "android=new UiSelector().className(\"android.widget.Button\").instance(1)"
+      ],
+      "verified": true
+    }
+  }
+}
