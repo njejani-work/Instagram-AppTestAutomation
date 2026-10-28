@@ -1,0 +1,93 @@
+{
+  "screen": 1,
+  "package": "com.instagram.android",
+  "activity": "com.instagram.modal.ModalActivity",
+  "capturedAt": "2026-10-27T09:15:08.904Z",
+  "locators": {
+    "englishUsBtn": "android=new UiSelector().className(\"android.widget.Button\").description(\"English (US)\")",
+    "usernameEmailOrMobileInput": "~Username, email or mobile number,",
+    "passwordInput": "~Password,",
+    "logInBtn": "android=new UiSelector().className(\"android.widget.Button\").description(\"Log in\")",
+    "forgotPasswordBtn": "android=new UiSelector().className(\"android.widget.Button\").description(\"Forgot password?\")",
+    "createNewAccountBtn": "android=new UiSelector().className(\"android.widget.Button\").description(\"Create new account\")"
+  },
+  "details": {
+    "englishUsBtn": {
+      "selector": "android=new UiSelector().className(\"android.widget.Button\").description(\"English (US)\")",
+      "strategy": "uiautomator",
+      "unique": true,
+      "class": "android.widget.Button",
+      "contentDesc": "English (US)",
+      "bounds": "[233,112][488,155]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").instance(0)"
+      ],
+      "verified": true
+    },
+    "usernameEmailOrMobileInput": {
+      "selector": "~Username, email or mobile number,",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.widget.EditText",
+      "contentDesc": "Username, email or mobile number,",
+      "bounds": "[64,484][584,523]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.EditText\").description(\"Username, email or mobile number,\")",
+        "//android.widget.EditText[@password='false']",
+        "android=new UiSelector().className(\"android.widget.EditText\").instance(0)"
+      ],
+      "verified": true
+    },
+    "passwordInput": {
+      "selector": "~Password,",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.widget.EditText",
+      "contentDesc": "Password,",
+      "password": true,
+      "bounds": "[64,627][584,666]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.EditText\").description(\"Password,\")",
+        "//android.widget.EditText[@password='true']",
+        "android=new UiSelector().className(\"android.widget.EditText\").instance(1)"
+      ],
+      "verified": true
+    },
+    "logInBtn": {
+      "selector": "android=new UiSelector().className(\"android.widget.Button\").description(\"Log in\")",
+      "strategy": "uiautomator",
+      "unique": true,
+      "class": "android.widget.Button",
+      "contentDesc": "Log in",
+      "bounds": "[32,715][688,803]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").instance(1)"
+      ],
+      "verified": true
+    },
+    "forgotPasswordBtn": {
+      "selector": "android=new UiSelector().className(\"android.widget.Button\").description(\"Forgot password?\")",
+      "strategy": "uiautomator",
+      "unique": true,
+      "class": "android.widget.Button",
+      "contentDesc": "Forgot password?",
+      "bounds": "[203,827][517,899]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").instance(2)"
+      ],
+      "verified": true
+    },
+    "createNewAccountBtn": {
+      "selector": "android=new UiSelector().className(\"android.widget.Button\").description(\"Create new account\")",
+      "strategy": "uiautomator",
+      "unique": true,
+      "class": "android.widget.Button",
+      "contentDesc": "Create new account",
+      "bounds": "[32,1013][688,1101]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").instance(3)"
+      ],
+      "verified": true
+    }
+  }
+}

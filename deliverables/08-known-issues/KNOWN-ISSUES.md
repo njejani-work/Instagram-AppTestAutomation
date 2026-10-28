@@ -1,0 +1,49 @@
+# 08 – Known issues & limitations
+
+## Locators not yet seen in a screen dump (18)
+
+Confirm these first when a related step fails (capture the screen with `npm run locators`).
+
+| Page | Element | Selector | Note |
+|---|---|---|---|
+| LoginPage | `loginErrorByText` | `android=new UiSelector().textMatches("(?is).*(incorrect\|can.?t find\|couldn.?t find\|isn.?t right\|wrong\|try again\|no account\|not found\|invalid).*")` | Invalid-login message – not dumped yet. Adjust the wording pattern if needed. |
+| LoginPage | `loginErrorByDesc` | `android=new UiSelector().descriptionMatches("(?is).*(incorrect\|can.?t find\|couldn.?t find\|isn.?t right\|wrong\|try again\|no account\|not found\|invalid).*")` | Invalid-login message – not dumped yet. Adjust the wording pattern if needed. |
+| LoginPage | `errorDismissBtn` | `android=new UiSelector().className("android.widget.Button").textMatches("(?i)(ok\|try again\|dismiss\|close)")` | Error dialog button – not dumped yet. |
+| LoginPage | `errorDismissBtnByDesc` | `android=new UiSelector().className("android.widget.Button").descriptionMatches("(?i)(ok\|try again\|dismiss\|close)")` | Error dialog button – not dumped yet. |
+| HomePage | `storyButtons` | `android=new UiSelector().className("android.widget.Button").descriptionContains("'s story, ")` | Story buttons: content-desc is "<user>'s story, N of M, …" – matched by prefix, so it works for any user (screen 3). |
+| HomePage | `storyOf(username)` | `android=new UiSelector().className("android.widget.Button").descriptionStartsWith("<username>'s story")` | Story buttons: content-desc is "<user>'s story, N of M, …" – matched by prefix, so it works for any user (screen 3). |
+| HomePage | `storyAt(index)` | `android=new UiSelector().className("android.widget.Button").descriptionContains("'s story, <index> of ")` | Story buttons: content-desc is "<user>'s story, N of M, …" – matched by prefix, so it works for any user (screen 3). |
+| HomePage | `likeBtns` | `id=com.instagram.android:id/row_feed_button_like` | Below the first post – not in a dump yet. Confirm after one scroll. |
+| HomePage | `commentBtns` | `id=com.instagram.android:id/row_feed_button_comment` | Below the first post – not in a dump yet. Confirm after one scroll. |
+| HomePage | `shareBtns` | `id=com.instagram.android:id/row_feed_button_share` | Below the first post – not in a dump yet. Confirm after one scroll. |
+| HomePage | `saveBtns` | `id=com.instagram.android:id/row_feed_button_save` | Below the first post – not in a dump yet. Confirm after one scroll. |
+| ProfilePage | `gridItems` | `android=new UiSelector().descriptionMatches("(?i).*row \\d+, column \\d+.*")` | Grid posts – profile had 0 posts when dumped. Confirm on a profile with posts. |
+| ProfilePage | `gridItemAt(row, col)` | `android=new UiSelector().descriptionMatches("(?i).*row <row>, column <col>.*")` | Grid posts – profile had 0 posts when dumped. Confirm on a profile with posts. |
+| MenuPage | `searchInput` | `android.widget.EditText` |  |
+| MenuPage | `option(label)` | `//*[starts-with(@text, '<label>') or starts-with(@content-desc, '<label>')]/ancestor-or-self::*[@clickable='true'][1]` | Menu rows have no id/desc of their own – matched by the start of their label (screens 5, 6). Labels: MENU in MenuPage.js. |
+| permissions | `message` | `id=com.android.permissioncontroller:id/permission_message` | Popup text – present on the popup, not listed in the dump (not clickable). |
+| permissions | `denyBtn` | `id=com.android.permissioncontroller:id/permission_deny_button` | First-time variant of "Don't allow" (screen 10 shows the repeat variant). |
+| permissions | `denyByText` | `android=new UiSelector().className("android.widget.Button").textMatches("(?i)(don.?t allow\|deny)")` |  |
+## App behaviour the tests work around
+
+| Behaviour | Handling |
+|---|---|
+| "Save your login info?" – optional, two variants | optional step; `notNowBtn` matches both |
+| Notification-permission popup a few seconds after the feed loads | denied inside every wait and around every step |
+| Pull-to-refresh swallows the next tap | flows don't scroll the feed before tapping a tab |
+| Swipes near screen edges trigger Home / Back / notification shade | all swipes use `BasePage.swipe()` (safe area) |
+| Top bar hides while scrolling | swipe area falls back to screen insets |
+| Instagram keeps the session | login tests log out; hooks call `ensureLoggedOut()` |
+| Splash screen after launch | `currentScreen()` waits for a known screen |
+| Log-out dialogs in varying order | told apart by button text, handled in a loop |
+
+## Limitations
+
+- One device at a time (`maxInstances: 1`) – tests share one account.
+- Instagram security checks / 2-factor stop the login – complete by hand; don't loop the full suite.
+- App updates can change ids/labels – run `npm run test:smoke` after every Instagram update.
+- Android only. Use a dedicated test account on a test device, at low frequency.
+
+
+---
+_Generated by «npm run deliverables» on 2026-10-28 · instagram-appium-tests 1.0.0_

@@ -2,7 +2,7 @@
 // Packs the project + deliverables into handover/instagram-appium-tests-handover.zip
 //   - leaves out node_modules, reports, logs, allure-results, locators/, .env, previous handovers
 //   - replaces test/data/users.js with the credential-free template (deliverables/05-test-data/users.example.js)
-//   - refreshes the locator catalogue first
+//   - regenerates the complete deliverables/ folder first (tools/build-deliverables.mjs)
 // Usage: npm run handover
 
 import fs from 'node:fs';
@@ -15,11 +15,11 @@ const OUT_DIR = path.join(ROOT, 'handover');
 const ZIP = path.join(OUT_DIR, 'instagram-appium-tests-handover.zip');
 const PREFIX = 'instagram-appium-tests/';
 const EXCLUDE_DIRS = new Set(['node_modules', 'reports', 'logs', 'allure-results', 'locators', 'handover', '.git']);
-const EXCLUDE_FILES = new Set(['.env', 'clickables.json', 'extract-clickables.js']);
+const EXCLUDE_FILES = new Set(['.env', 'clickables.json', 'extract-clickables.js', 'locator-catalog.json']);
 const REPLACE = { 'test/data/users.js': 'deliverables/05-test-data/users.example.js' };
 
-// keep the catalogue in sync with the code
-try { execFileSync(process.execPath, ['tools/export-locators.mjs'], { stdio: 'inherit' }); } catch { /* optional */ }
+// regenerate every deliverable from the current code (test cases, commands, locators, docs …)
+execFileSync(process.execPath, ['tools/build-deliverables.mjs'], { stdio: 'inherit' });
 
 function walk(dir) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((d) => {

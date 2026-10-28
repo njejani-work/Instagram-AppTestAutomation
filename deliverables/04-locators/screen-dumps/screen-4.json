@@ -1,0 +1,425 @@
+{
+  "screen": 4,
+  "package": "com.instagram.android",
+  "activity": "com.instagram.mainactivity.InstagramMainActivity",
+  "capturedAt": "2026-10-27T09:18:35.296Z",
+  "locators": {
+    "rowProfileHeaderImageview": "id=com.instagram.android:id/row_profile_header_imageview_frame_layout",
+    "profileHeaderPostCount": "id=com.instagram.android:id/profile_header_post_count_front_familiar",
+    "0followers": "~0followers",
+    "0following": "~0following",
+    "profileHeaderNameAndBtn": "id=com.instagram.android:id/profile_header_name_and_bio_upsell",
+    "editProfileBtn": "~Edit profile",
+    "shareProfileBtn": "~Share profile",
+    "discoverPeopleBtn": "~Discover people",
+    "seeAllBtn": "id=com.instagram.android:id/netego_carousel_cta",
+    "contactImportCardContainer": "id=com.instagram.android:id/contact_import_card_container",
+    "dismissImg": "android=new UiSelector().className(\"android.widget.ImageView\").instance(3)",
+    "suggestedEntityCardContainer": "android=new UiSelector().className(\"android.widget.LinearLayout\").instance(12)",
+    "followAastha127804Text": "~Follow Aastha&#127804;",
+    "dismissImg2": "android=new UiSelector().className(\"android.widget.ImageView\").instance(5)",
+    "suggestedEntityCardContainer2": "android=new UiSelector().className(\"android.widget.LinearLayout\").instance(14)",
+    "followMadhuPranavMehtaText": "~Follow madhu_pranav mehta",
+    "gridViewImg": "~Grid view",
+    "reelsImg": "android=new UiSelector().resourceId(\"com.instagram.android:id/profile_tab_icon_view\").description(\"Reels\")",
+    "photosOfYou": "//*[@content-desc='Photos of you']/ancestor::*[@clickable='true'][1]",
+    "emptyStateViewRoot": "id=com.instagram.android:id/empty_state_view_root",
+    "actionBarUsernameContainer": "id=com.instagram.android:id/action_bar_username_container",
+    "createNewImg": "~Create New",
+    "optionsImg": "~Options",
+    "home": "~Home",
+    "reels": "id=com.instagram.android:id/clips_tab",
+    "message": "~Message",
+    "searchAndExplore": "~Search and explore",
+    "profile": "~Profile"
+  },
+  "details": {
+    "rowProfileHeaderImageview": {
+      "selector": "id=com.instagram.android:id/row_profile_header_imageview_frame_layout",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.FrameLayout",
+      "resourceId": "com.instagram.android:id/row_profile_header_imageview_frame_layout",
+      "bounds": "[46,174][194,322]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.FrameLayout\").instance(16)"
+      ],
+      "verified": true
+    },
+    "profileHeaderPostCount": {
+      "selector": "id=com.instagram.android:id/profile_header_post_count_front_familiar",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.LinearLayout",
+      "resourceId": "com.instagram.android:id/profile_header_post_count_front_familiar",
+      "bounds": "[240,219][353,328]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.LinearLayout\").instance(6)"
+      ],
+      "verified": true
+    },
+    "0followers": {
+      "selector": "~0followers",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.view.View",
+      "contentDesc": "0followers",
+      "resourceId": "com.instagram.android:id/profile_header_followers_stacked_familiar",
+      "bounds": "[353,219][527,328]",
+      "alternatives": [
+        "id=com.instagram.android:id/profile_header_followers_stacked_familiar",
+        "android=new UiSelector().resourceId(\"com.instagram.android:id/profile_header_followers_stacked_familiar\").description(\"0followers\")",
+        "android=new UiSelector().className(\"android.view.View\").description(\"0followers\")",
+        "android=new UiSelector().className(\"android.view.View\").instance(0)"
+      ],
+      "verified": true
+    },
+    "0following": {
+      "selector": "~0following",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.view.View",
+      "contentDesc": "0following",
+      "resourceId": "com.instagram.android:id/profile_header_following_stacked_familiar",
+      "bounds": "[527,219][688,328]",
+      "alternatives": [
+        "id=com.instagram.android:id/profile_header_following_stacked_familiar",
+        "android=new UiSelector().resourceId(\"com.instagram.android:id/profile_header_following_stacked_familiar\").description(\"0following\")",
+        "android=new UiSelector().className(\"android.view.View\").description(\"0following\")",
+        "android=new UiSelector().className(\"android.view.View\").instance(1)"
+      ],
+      "verified": true
+    },
+    "profileHeaderNameAndBtn": {
+      "selector": "id=com.instagram.android:id/profile_header_name_and_bio_upsell",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.view.ViewGroup",
+      "resourceId": "com.instagram.android:id/profile_header_name_and_bio_upsell",
+      "bounds": "[32,336][201,370]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.view.ViewGroup\").instance(6)"
+      ],
+      "verified": true
+    },
+    "editProfileBtn": {
+      "selector": "~Edit profile",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.widget.Button",
+      "contentDesc": "Edit profile",
+      "resourceId": "com.instagram.android:id/button_container",
+      "bounds": "[24,418][316,482]",
+      "alternatives": [
+        "android=new UiSelector().resourceId(\"com.instagram.android:id/button_container\").description(\"Edit profile\")",
+        "android=new UiSelector().className(\"android.widget.Button\").description(\"Edit profile\")",
+        "android=new UiSelector().className(\"android.widget.Button\").instance(0)"
+      ],
+      "verified": true
+    },
+    "shareProfileBtn": {
+      "selector": "~Share profile",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.widget.Button",
+      "contentDesc": "Share profile",
+      "resourceId": "com.instagram.android:id/button_container",
+      "bounds": "[328,418][620,482]",
+      "alternatives": [
+        "android=new UiSelector().resourceId(\"com.instagram.android:id/button_container\").description(\"Share profile\")",
+        "android=new UiSelector().className(\"android.widget.Button\").description(\"Share profile\")",
+        "android=new UiSelector().className(\"android.widget.Button\").instance(1)"
+      ],
+      "verified": true
+    },
+    "discoverPeopleBtn": {
+      "selector": "~Discover people",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.widget.Button",
+      "contentDesc": "Discover people",
+      "resourceId": "com.instagram.android:id/row_profile_header_button_chaining",
+      "bounds": "[632,418][696,482]",
+      "alternatives": [
+        "id=com.instagram.android:id/row_profile_header_button_chaining",
+        "android=new UiSelector().resourceId(\"com.instagram.android:id/row_profile_header_button_chaining\").description(\"Discover people\")",
+        "android=new UiSelector().className(\"android.widget.Button\").description(\"Discover people\")",
+        "android=new UiSelector().className(\"android.widget.Button\").instance(2)"
+      ],
+      "verified": true
+    },
+    "seeAllBtn": {
+      "selector": "id=com.instagram.android:id/netego_carousel_cta",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.Button",
+      "text": "See all",
+      "resourceId": "com.instagram.android:id/netego_carousel_cta",
+      "bounds": "[578,524][688,560]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").text(\"See all\")",
+        "android=new UiSelector().className(\"android.widget.Button\").instance(3)"
+      ],
+      "verified": true
+    },
+    "contactImportCardContainer": {
+      "selector": "id=com.instagram.android:id/contact_import_card_container",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.LinearLayout",
+      "resourceId": "com.instagram.android:id/contact_import_card_container",
+      "bounds": "[24,586][336,991]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.LinearLayout\").instance(11)"
+      ],
+      "verified": true
+    },
+    "dismissImg": {
+      "selector": "android=new UiSelector().className(\"android.widget.ImageView\").instance(3)",
+      "strategy": "uiautomator (index, fragile)",
+      "unique": true,
+      "class": "android.widget.ImageView",
+      "contentDesc": "Dismiss",
+      "resourceId": "com.instagram.android:id/dismiss_button_prism_style",
+      "bounds": "[276,586][336,646]",
+      "alternatives": [],
+      "verified": true
+    },
+    "suggestedEntityCardContainer": {
+      "selector": "android=new UiSelector().className(\"android.widget.LinearLayout\").instance(12)",
+      "strategy": "uiautomator (index, fragile)",
+      "unique": true,
+      "class": "android.widget.LinearLayout",
+      "resourceId": "com.instagram.android:id/suggested_entity_card_container",
+      "bounds": "[344,586][656,991]",
+      "alternatives": [],
+      "verified": true
+    },
+    "followAastha127804Text": {
+      "selector": "~Follow Aastha&#127804;",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.widget.TextView",
+      "text": "Follow",
+      "contentDesc": "Follow Aastha&#127804;",
+      "resourceId": "com.instagram.android:id/suggested_user_card_follow_button",
+      "bounds": "[368,903][632,967]",
+      "alternatives": [
+        "android=new UiSelector().resourceId(\"com.instagram.android:id/suggested_user_card_follow_button\").description(\"Follow Aastha&#127804;\")",
+        "android=new UiSelector().className(\"android.widget.TextView\").description(\"Follow Aastha&#127804;\")",
+        "android=new UiSelector().className(\"android.widget.TextView\").instance(16)"
+      ],
+      "verified": false
+    },
+    "dismissImg2": {
+      "selector": "android=new UiSelector().className(\"android.widget.ImageView\").instance(5)",
+      "strategy": "uiautomator (index, fragile)",
+      "unique": true,
+      "class": "android.widget.ImageView",
+      "contentDesc": "Dismiss",
+      "resourceId": "com.instagram.android:id/dismiss_button_prism_style",
+      "bounds": "[596,586][656,646]",
+      "alternatives": [],
+      "verified": true
+    },
+    "suggestedEntityCardContainer2": {
+      "selector": "android=new UiSelector().className(\"android.widget.LinearLayout\").instance(14)",
+      "strategy": "uiautomator (index, fragile)",
+      "unique": true,
+      "class": "android.widget.LinearLayout",
+      "resourceId": "com.instagram.android:id/suggested_entity_card_container",
+      "bounds": "[664,586][720,991]",
+      "alternatives": [],
+      "verified": true
+    },
+    "followMadhuPranavMehtaText": {
+      "selector": "~Follow madhu_pranav mehta",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.widget.TextView",
+      "text": "Follow",
+      "contentDesc": "Follow madhu_pranav mehta",
+      "resourceId": "com.instagram.android:id/suggested_user_card_follow_button",
+      "bounds": "[688,903][720,967]",
+      "alternatives": [
+        "android=new UiSelector().resourceId(\"com.instagram.android:id/suggested_user_card_follow_button\").description(\"Follow madhu_pranav mehta\")",
+        "android=new UiSelector().className(\"android.widget.TextView\").description(\"Follow madhu_pranav mehta\")",
+        "android=new UiSelector().className(\"android.widget.TextView\").instance(19)"
+      ],
+      "verified": true
+    },
+    "gridViewImg": {
+      "selector": "~Grid view",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.widget.ImageView",
+      "contentDesc": "Grid view",
+      "resourceId": "com.instagram.android:id/profile_tab_icon_view",
+      "bounds": "[0,1007][240,1103]",
+      "alternatives": [
+        "android=new UiSelector().resourceId(\"com.instagram.android:id/profile_tab_icon_view\").description(\"Grid view\")",
+        "android=new UiSelector().className(\"android.widget.ImageView\").description(\"Grid view\")",
+        "android=new UiSelector().className(\"android.widget.ImageView\").instance(6)"
+      ],
+      "verified": true
+    },
+    "reelsImg": {
+      "selector": "android=new UiSelector().resourceId(\"com.instagram.android:id/profile_tab_icon_view\").description(\"Reels\")",
+      "strategy": "uiautomator",
+      "unique": true,
+      "class": "android.widget.ImageView",
+      "contentDesc": "Reels",
+      "resourceId": "com.instagram.android:id/profile_tab_icon_view",
+      "bounds": "[240,1007][480,1103]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.ImageView\").description(\"Reels\")",
+        "android=new UiSelector().className(\"android.widget.ImageView\").instance(7)"
+      ],
+      "verified": true
+    },
+    "photosOfYou": {
+      "selector": "//*[@content-desc='Photos of you']/ancestor::*[@clickable='true'][1]",
+      "strategy": "xpath",
+      "unique": true,
+      "class": "android.widget.FrameLayout",
+      "label": "Photos of you",
+      "bounds": "[480,1007][720,1103]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.FrameLayout\").instance(26)"
+      ],
+      "verified": true
+    },
+    "emptyStateViewRoot": {
+      "selector": "id=com.instagram.android:id/empty_state_view_root",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.LinearLayout",
+      "resourceId": "com.instagram.android:id/empty_state_view_root",
+      "bounds": "[0,1104][720,1136]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.LinearLayout\").instance(21)"
+      ],
+      "verified": true
+    },
+    "actionBarUsernameContainer": {
+      "selector": "id=com.instagram.android:id/action_bar_username_container",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.LinearLayout",
+      "resourceId": "com.instagram.android:id/action_bar_username_container",
+      "bounds": "[32,48][512,160]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.LinearLayout\").instance(23)"
+      ],
+      "verified": true
+    },
+    "createNewImg": {
+      "selector": "~Create New",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.widget.ImageView",
+      "contentDesc": "Create New",
+      "resourceId": "com.instagram.android:id/profile_header_create_button",
+      "bounds": "[512,48][608,160]",
+      "alternatives": [
+        "id=com.instagram.android:id/profile_header_create_button",
+        "android=new UiSelector().resourceId(\"com.instagram.android:id/profile_header_create_button\").description(\"Create New\")",
+        "android=new UiSelector().className(\"android.widget.ImageView\").description(\"Create New\")",
+        "android=new UiSelector().className(\"android.widget.ImageView\").instance(10)"
+      ],
+      "verified": true
+    },
+    "optionsImg": {
+      "selector": "~Options",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.widget.ImageView",
+      "contentDesc": "Options",
+      "bounds": "[608,48][704,160]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.ImageView\").description(\"Options\")",
+        "android=new UiSelector().className(\"android.widget.ImageView\").instance(11)"
+      ],
+      "verified": true
+    },
+    "home": {
+      "selector": "~Home",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.widget.FrameLayout",
+      "contentDesc": "Home",
+      "resourceId": "com.instagram.android:id/feed_tab",
+      "bounds": "[0,1136][144,1232]",
+      "alternatives": [
+        "id=com.instagram.android:id/feed_tab",
+        "android=new UiSelector().resourceId(\"com.instagram.android:id/feed_tab\").description(\"Home\")",
+        "android=new UiSelector().className(\"android.widget.FrameLayout\").description(\"Home\")",
+        "android=new UiSelector().className(\"android.widget.FrameLayout\").instance(29)"
+      ],
+      "verified": true
+    },
+    "reels": {
+      "selector": "id=com.instagram.android:id/clips_tab",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.FrameLayout",
+      "contentDesc": "Reels",
+      "resourceId": "com.instagram.android:id/clips_tab",
+      "bounds": "[144,1136][288,1232]",
+      "alternatives": [
+        "android=new UiSelector().resourceId(\"com.instagram.android:id/clips_tab\").description(\"Reels\")",
+        "android=new UiSelector().className(\"android.widget.FrameLayout\").description(\"Reels\")",
+        "android=new UiSelector().className(\"android.widget.FrameLayout\").instance(31)"
+      ],
+      "verified": true
+    },
+    "message": {
+      "selector": "~Message",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.widget.FrameLayout",
+      "contentDesc": "Message",
+      "resourceId": "com.instagram.android:id/direct_tab",
+      "bounds": "[288,1136][432,1232]",
+      "alternatives": [
+        "id=com.instagram.android:id/direct_tab",
+        "android=new UiSelector().resourceId(\"com.instagram.android:id/direct_tab\").description(\"Message\")",
+        "android=new UiSelector().className(\"android.widget.FrameLayout\").description(\"Message\")",
+        "android=new UiSelector().className(\"android.widget.FrameLayout\").instance(32)"
+      ],
+      "verified": true
+    },
+    "searchAndExplore": {
+      "selector": "~Search and explore",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.widget.FrameLayout",
+      "contentDesc": "Search and explore",
+      "resourceId": "com.instagram.android:id/search_tab",
+      "bounds": "[432,1136][576,1232]",
+      "alternatives": [
+        "id=com.instagram.android:id/search_tab",
+        "android=new UiSelector().resourceId(\"com.instagram.android:id/search_tab\").description(\"Search and explore\")",
+        "android=new UiSelector().className(\"android.widget.FrameLayout\").description(\"Search and explore\")",
+        "android=new UiSelector().className(\"android.widget.FrameLayout\").instance(33)"
+      ],
+      "verified": true
+    },
+    "profile": {
+      "selector": "~Profile",
+      "strategy": "accessibility id",
+      "unique": true,
+      "class": "android.widget.FrameLayout",
+      "contentDesc": "Profile",
+      "resourceId": "com.instagram.android:id/profile_tab",
+      "bounds": "[576,1136][720,1232]",
+      "alternatives": [
+        "id=com.instagram.android:id/profile_tab",
+        "android=new UiSelector().resourceId(\"com.instagram.android:id/profile_tab\").description(\"Profile\")",
+        "android=new UiSelector().className(\"android.widget.FrameLayout\").description(\"Profile\")",
+        "android=new UiSelector().className(\"android.widget.FrameLayout\").instance(34)"
+      ],
+      "verified": true
+    }
+  }
+}

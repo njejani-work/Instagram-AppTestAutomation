@@ -1,0 +1,66 @@
+{
+  "screen": 10,
+  "package": "com.google.android.permissioncontroller",
+  "activity": "com.android.permissioncontroller.permission.ui.GrantPermissionsActivity",
+  "capturedAt": "2026-10-27T10:40:45.255Z",
+  "locators": {
+    "grantSingleton": "id=com.android.permissioncontroller:id/grant_singleton",
+    "grantDialog": "id=com.android.permissioncontroller:id/grant_dialog",
+    "allowBtn": "id=com.android.permissioncontroller:id/permission_allow_button",
+    "donTAllowBtn": "id=com.android.permissioncontroller:id/permission_deny_and_dont_ask_again_button"
+  },
+  "details": {
+    "grantSingleton": {
+      "selector": "id=com.android.permissioncontroller:id/grant_singleton",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.LinearLayout",
+      "resourceId": "com.android.permissioncontroller:id/grant_singleton",
+      "bounds": "[18,327][702,952]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.LinearLayout\").instance(0)"
+      ],
+      "verified": true
+    },
+    "grantDialog": {
+      "selector": "id=com.android.permissioncontroller:id/grant_dialog",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.LinearLayout",
+      "resourceId": "com.android.permissioncontroller:id/grant_dialog",
+      "bounds": "[18,327][702,952]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.LinearLayout\").instance(1)"
+      ],
+      "verified": true
+    },
+    "allowBtn": {
+      "selector": "id=com.android.permissioncontroller:id/permission_allow_button",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.Button",
+      "text": "Allow",
+      "resourceId": "com.android.permissioncontroller:id/permission_allow_button",
+      "bounds": "[98,672][622,768]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").text(\"Allow\")",
+        "android=new UiSelector().className(\"android.widget.Button\").instance(0)"
+      ],
+      "verified": true
+    },
+    "donTAllowBtn": {
+      "selector": "id=com.android.permissioncontroller:id/permission_deny_and_dont_ask_again_button",
+      "strategy": "id",
+      "unique": true,
+      "class": "android.widget.Button",
+      "text": "Don’t allow",
+      "resourceId": "com.android.permissioncontroller:id/permission_deny_and_dont_ask_again_button",
+      "bounds": "[98,784][622,880]",
+      "alternatives": [
+        "android=new UiSelector().className(\"android.widget.Button\").text(\"Don’t allow\")",
+        "android=new UiSelector().className(\"android.widget.Button\").instance(1)"
+      ],
+      "verified": true
+    }
+  }
+}

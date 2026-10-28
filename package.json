@@ -4,23 +4,33 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js",
+    "setup": "node ./tools/setup.mjs",
+    "check": "node ./tools/check.mjs",
     "test": "wdio run ./wdio.conf.js",
     "test:smoke": "wdio run ./wdio.conf.js --suite smoke",
+    "test:regression": "wdio run ./wdio.conf.js --suite regression",
     "test:login": "wdio run ./wdio.conf.js --suite login",
+    "test:valid": "wdio run ./wdio.conf.js --spec ./test/specs/login.e2e.js --mochaOpts.grep \"logs in with valid credentials\"",
+    "test:invalid": "wdio run ./wdio.conf.js --spec ./test/specs/login.e2e.js --mochaOpts.grep \"invalid credentials\"",
     "test:flow": "wdio run ./wdio.conf.js --suite flow",
     "test:home": "wdio run ./wdio.conf.js --suite home",
     "test:profile": "wdio run ./wdio.conf.js --suite profile",
     "test:menu": "wdio run ./wdio.conf.js --suite menu",
     "test:spec": "wdio run ./wdio.conf.js --spec",
-    "test:valid": "wdio run ./wdio.conf.js --spec ./test/specs/login.e2e.js --mochaOpts.grep \"logs in with valid credentials\"",
-    "test:invalid": "wdio run ./wdio.conf.js --spec ./test/specs/login.e2e.js --mochaOpts.grep \"invalid credentials\"",
+    "test:grep": "wdio run ./wdio.conf.js --mochaOpts.grep",
+    "wdio": "wdio run ./wdio.conf.js",
+    "dashboard": "node ./tools/build-dashboard.mjs && node ./tools/open-report.mjs",
+    "dashboard:build": "node ./tools/build-dashboard.mjs",
+    "dashboard:open": "node ./tools/open-report.mjs",
+    "report:allure": "allure generate ./allure-results --clean -o ./reports/allure && allure open ./reports/allure",
     "locators": "node ./tools/find-locators.mjs",
     "locators:file": "node ./tools/find-locators.mjs --file",
-    "report:allure": "allure generate ./allure-results --clean -o ./reports/allure && allure open ./reports/allure",
-    "report:evidence": "node ./tools/open-report.mjs",
+    "locators:catalog": "node ./tools/export-locators.mjs",
+    "deliverables": "node ./tools/build-deliverables.mjs",
+    "handover": "node ./tools/make-handover.mjs",
     "clean": "node -e \"for (const d of ['allure-results','reports','logs']) require('node:fs').rmSync(d,{recursive:true,force:true})\"",
     "appium:doctor": "appium driver doctor uiautomator2",
+    "appium:driver": "appium driver install uiautomator2 || appium driver update uiautomator2",
     "devices": "adb devices -l"
   },
   "dependencies": {
@@ -35,6 +45,7 @@
     "@wdio/mocha-framework": "^10.1.0",
     "@wdio/spec-reporter": "^10.1.0",
     "allure-commandline": "^2.29.0",
-    "appium-uiautomator2-driver": "^8.7.2"
+    "appium-uiautomator2-driver": "^8.7.2",
+    "dotenv": "^16.4.5"
   }
 }

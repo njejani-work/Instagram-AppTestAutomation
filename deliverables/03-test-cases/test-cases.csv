@@ -1,0 +1,81 @@
+﻿ID,Priority,Suite,Test (as on dashboard),Spec file,Run command,Preconditions,Test data,Steps,Expected result,Automated
+"TC-HOME-01","P2","Home feed","swipes through the story tray and opens a story","test/specs/home.e2e.js","npm run test:grep -- ""swipes through the story tray and opens a story""","Logged in (before hook logs in if needed). ≥ 5 stories in the tray.","users.valid","1. Home feed shown
+2. Swipe story tray left
+3. Swipe story tray right
+4. Open story #1
+5. Close story","Tray scrolls horizontally; story viewer opens and closes back to the feed.","Yes"
+"TC-HOME-02","P2","Home feed","likes, saves and opens comments on the first post","test/specs/home.e2e.js","npm run test:grep -- ""likes, saves and opens comments on the first post""","Logged in. Feed has at least one post.","users.valid","1. Home feed shown
+2. Like first post
+3. Save first post
+4. Open comments
+5. Close comments","Post shows as liked and saved; comments open and close. Changes account data.","Yes"
+"TC-HOME-03","P3","Home feed","scrolls the feed vertically","test/specs/home.e2e.js","npm run test:grep -- ""scrolls the feed vertically""","Logged in.","users.valid","1. Home feed shown
+2. Scroll feed down ×3
+3. Scroll feed up ×1
+4. Back to top (tap Home)","Feed scrolls both ways without system gestures; story tray visible again at the top.","Yes"
+"TC-LOGIN-01","P1","Login","logs in with valid credentials","test/specs/login.e2e.js","npm run test:grep -- ""logs in with valid credentials""","App installed, logged out (beforeEach logs out automatically).","users.valid","1. App opened on login screen
+2. Tap ""Use another profile""
+3. Enter username
+4. Enter password
+5. Hide keyboard
+6. Tap ""Log in""
+7. Tap ""Not now"" on save login info (only if applicable)
+8. Save login info prompt not shown (only if applicable)
+9. Home feed loaded
+10. Open Profile tab
+11. Open Options menu
+12. Scroll menu to bottom
+13. Tap ""Log out""
+14. Tap ""Not now"" on save login info (only if applicable)
+15. Confirm ""Log out"" (only if applicable)
+16. Logged out – login screen shown","Home feed loads after login; test ends logged out on the login screen.","Yes"
+"TC-LOGIN-02","P1","Login","shows an error for invalid credentials","test/specs/login.e2e.js","npm run test:grep -- ""shows an error for invalid credentials""","Logged out.","users.invalid","1. App opened on login screen
+2. Tap ""Use another profile""
+3. Enter invalid username
+4. Enter invalid password
+5. Hide keyboard
+6. Tap ""Log in""
+7. Dismiss error
+8. Still on login screen","Error message shown; user stays on the login form; home feed never appears.","Yes"
+"TC-FLOW-01","P1","Login to logout","logs in, visits home and profile, then logs out","test/specs/loginToLogout.e2e.js","npm run test:grep -- ""logs in, visits home and profile, then logs out""","Logged out.","users.valid","1. App opened on login screen
+2. Tap ""Use another profile""
+3. Enter username
+4. Enter password
+5. Hide keyboard
+6. Tap ""Log in""
+7. Tap ""Not now"" on save login info (only if applicable)
+8. Home feed loaded (only if applicable)
+9. Open Profile tab
+10. Open Options menu
+11. Scroll menu to bottom
+12. Tap ""Log out""
+13. Tap ""Not now"" on save login info (only if applicable)
+14. Confirm ""Log out"" (only if applicable)
+15. Logged out – login screen shown","Full journey completes and ends on the login screen. No feed scrolling (pull-to-refresh swallows the Profile tap).","Yes"
+"TC-MENU-01","P2","Settings menu","opens each top-level option and returns","test/specs/menu.e2e.js","npm run test:grep -- ""opens each top-level option and returns""","Logged in.","users.valid","1. Open settings menu (Profile → Options)
+2. Open ""<label>"" – for each: Saved, Archive, Your activity, Time management, About
+3. Back from ""<label>"" – for each: Saved, Archive, Your activity, Time management, About","Each option opens its screen; Back returns to the menu.","Yes"
+"TC-MENU-02","P3","Settings menu","scrolls to the bottom and back to the top","test/specs/menu.e2e.js","npm run test:grep -- ""scrolls to the bottom and back to the top""","Logged in.","users.valid","1. Open settings menu (Profile → Options)
+2. Scroll to bottom
+3. Scroll to top","""Log out"" + ""Add profile"" at the bottom, Search at the top; no Home gesture triggered.","Yes"
+"TC-MENU-03","P3","Settings menu","searches the menu","test/specs/menu.e2e.js","npm run test:grep -- ""searches the menu""","Logged in.","users.valid","1. Open settings menu (Profile → Options)
+2. Search ""Saved""
+3. Clear search","""Saved"" listed in the results.","Yes"
+"TC-MENU-04","P1","Settings menu","cancels log out, then logs out without saving login info","test/specs/menu.e2e.js","npm run test:grep -- ""cancels log out, then logs out without saving login info""","Logged in.","users.valid","1. Open settings menu (Profile → Options)
+2. Tap ""Log out"", then cancel
+3. Log out (""Not now"" on save info, confirm)","Cancel keeps the session; second attempt logs out to the login screen.","Yes"
+"TC-PROF-01","P2","Profile","shows the profile header","test/specs/profile.e2e.js","npm run test:grep -- ""shows the profile header""","Logged in.","users.valid","1. Open Profile tab
+2. Read username, name and counts","Username not empty, follower count numeric, Edit profile + Share profile visible.","Yes"
+"TC-PROF-02","P3","Profile","opens and closes Edit profile","test/specs/profile.e2e.js","npm run test:grep -- ""opens and closes Edit profile""","Logged in.","users.valid","1. Open Profile tab
+2. Tap ""Edit profile""
+3. Go back to profile","Edit profile opens; Back returns to the profile.","Yes"
+"TC-PROF-03","P3","Profile","opens and closes Share profile","test/specs/profile.e2e.js","npm run test:grep -- ""opens and closes Share profile""","Logged in.","users.valid","1. Open Profile tab
+2. Tap ""Share profile""
+3. Go back to profile","Share sheet opens; Back returns to the profile.","Yes"
+"TC-PROF-04","P3","Profile","switches between the content tabs","test/specs/profile.e2e.js","npm run test:grep -- ""switches between the content tabs""","Logged in.","users.valid","1. Open Profile tab
+2. Open Reels tab
+3. Open ""Photos of you"" tab
+4. Open Grid tab","Each content tab can be selected.","Yes"
+"TC-PROF-05","P3","Profile","scrolls the profile vertically","test/specs/profile.e2e.js","npm run test:grep -- ""scrolls the profile vertically""","Logged in.","users.valid","1. Open Profile tab
+2. Scroll profile down ×2
+3. Scroll back to top","Profile scrolls; header visible again at the top.","Yes"
