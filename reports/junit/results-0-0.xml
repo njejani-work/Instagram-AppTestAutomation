@@ -1,847 +1,961 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites tests="1" failures="0" errors="0" skipped="0">
-  <testsuite name="Login to logout" timestamp="2026-10-27T17:39:45" time="132.133" tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="Login" timestamp="2026-10-27T22:20:17" time="147.015" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="Login to logout"/>
+      <property name="suiteName" value="Login"/>
       <property name="capabilities" value="android.emulator-5554"/>
-      <property name="file" value="file:///C:/Users/egeno/Downloads/Nishant/Projects/App%20test%20Automation/Instagram/test/specs/loginToLogout.e2e.js"/>
+      <property name="file" value="file:///C:/Users/egeno/Downloads/Nishant/Projects/App%20test%20Automation/Instagram/test/specs/login.e2e.js"/>
     </properties>
-    <testcase classname="android.emulator-5554.Login_to_logout" name="logs in visits home and profile then logs out" time="125.779">
+    <testcase classname="android.emulator-5554.Login" name="logs in with valid credentials" time="146.211">
       <system-out><![CDATA[
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
-RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/screenshot - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-017c-ffff-ffff00000081/displayed - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-017c-ffff-ffff00000081/click - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-017e-ffff-ffff000000d8/displayed - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-017e-ffff-ffff000000d8/displayed - {}
-RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
-RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/screenshot - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-017e-ffff-ffff000000d8/clear - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-017e-ffff-ffff000000d8/value - {"text":"7004840225"}
-RESULT: {"text":"7004840225"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-017e-ffff-ffff000000d8/text - {}
-RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
-RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/screenshot - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Password,"}
-RESULT: {"using":"accessibility id","value":"Password,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-017e-ffff-ffff000000e2/clear - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-017e-ffff-ffff000000e2/value - {"text":"errorcode"}
-RESULT: {"text":"errorcode"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
-RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/screenshot - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/appium/device/is_keyboard_shown - {}
-RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
-RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/screenshot - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Log in\")"}
-RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Log in\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-017e-ffff-ffff000000e5/click - {}
-RESULT: {}
 COMMAND: waitUntil - undefined
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
 RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
 RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
 RESULT: {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+RESULT: {"using":"accessibility id","value":"Home"}
 RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
 RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Edit profile"}
+RESULT: {"using":"accessibility id","value":"Edit profile"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Edit profile"}
+RESULT: {"using":"accessibility id","value":"Edit profile"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Back"}
+RESULT: {"using":"accessibility id","value":"Back"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Back"}
+RESULT: {"using":"accessibility id","value":"Back"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
 RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
 RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
 RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
-RESULT: {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
 RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
 RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
 RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
 RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
-RESULT: {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Home"}
-RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
-RESULT: {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
-RESULT: {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Home"}
-RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
-RESULT: {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
-RESULT: {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Home"}
-RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
-RESULT: {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
-RESULT: {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Home"}
-RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
-RESULT: {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff00000143/displayed - {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0193-ffff-ffff00000081/displayed - {}
 RESULT: {}
 RESULT: undefined
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/screenshot - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/screenshot - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0193-ffff-ffff00000081/displayed - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0193-ffff-ffff00000081/click - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0195-ffff-ffff000000d8/displayed - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0195-ffff-ffff000000d8/displayed - {}
+RESULT: {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
+RESULT: {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0195-ffff-ffff000000d8/clear - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0195-ffff-ffff000000d8/value - {"text":"7004840225"}
+RESULT: {"text":"7004840225"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0195-ffff-ffff000000d8/text - {}
+RESULT: {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
+RESULT: {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Password,"}
+RESULT: {"using":"accessibility id","value":"Password,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0195-ffff-ffff000000e2/clear - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0195-ffff-ffff000000e2/value - {"text":"errorcode"}
+RESULT: {"text":"errorcode"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
+RESULT: {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/appium/device/is_keyboard_shown - {}
+RESULT: {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
+RESULT: {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Log in\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Log in\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0195-ffff-ffff000000e5/click - {}
+RESULT: {}
 COMMAND: waitUntil - undefined
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
 RESULT: {"using":"accessibility id","value":"Home"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff00000138/displayed - {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
 RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
 RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
 RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
 RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
 RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"accessibility id","value":"Home"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-ffff-ffff00000138/displayed - {}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/action_bar"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Instagram Home Feed"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Notifications"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").descriptionContains(\"'s story, \")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/media_group"}
+RESULT: undefined
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
+RESULT: {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
+RESULT: {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
+RESULT: {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
+RESULT: {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: waitUntil - undefined
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"accessibility id","value":"Home"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-ffff-ffff00000138/displayed - {}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-ffff-ffff00000138/displayed - {}
+RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
+RESULT: {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/action_bar"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Instagram Home Feed"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Notifications"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").descriptionContains(\"'s story, \")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/media_group"}
 RESULT: {"using":"id","value":"com.instagram.android:id/action_bar"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/action_bar"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/action_bar"}
 RESULT: {"using":"accessibility id","value":"Instagram Home Feed"}
+RESULT: {"using":"id","value":"com.instagram.android:id/action_bar"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-ffff-ffff00000122/displayed - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
+RESULT: {}
+RESULT: {"using":"id","value":"com.instagram.android:id/media_group"}
 RESULT: {"using":"accessibility id","value":"Notifications"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").descriptionContains(\"'s story, \")"}
-RESULT: {"using":"id","value":"com.instagram.android:id/media_group"}
-RESULT: {"using":"id","value":"com.instagram.android:id/action_bar"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff00000122/displayed - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-RESULT: undefined
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/screenshot - {}
 RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
+RESULT: {"using":"accessibility id","value":"Home"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-ffff-ffff00000138/displayed - {}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
 RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/screenshot - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Edit profile"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Edit profile"}
 RESULT: {"using":"accessibility id","value":"Edit profile"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Edit profile"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Edit profile"}
 RESULT: {"using":"accessibility id","value":"Edit profile"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/appium/device/is_keyboard_shown - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/appium/device/is_keyboard_shown - {}
 RESULT: {}
 COMMAND: waitUntil - undefined
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Profile"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Profile"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
 RESULT: {"using":"accessibility id","value":"Profile"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff00000147/displayed - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-ffff-ffff00000147/displayed - {}
 RESULT: {}
 RESULT: undefined
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff00000147/click - {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-ffff-ffff00000147/click - {}
 RESULT: {}
 COMMAND: waitUntil - undefined
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Edit profile"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Edit profile"}
 RESULT: {"using":"accessibility id","value":"Edit profile"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff0000032a/displayed - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-ffff-ffff0000033e/displayed - {}
 RESULT: {}
 RESULT: undefined
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Edit profile"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Edit profile"}
 RESULT: {"using":"accessibility id","value":"Edit profile"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff0000032a/displayed - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-ffff-ffff0000033e/displayed - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Edit profile"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Edit profile"}
 RESULT: {"using":"accessibility id","value":"Edit profile"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff0000032a/displayed - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-ffff-ffff0000033e/displayed - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Edit profile"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Edit profile"}
 RESULT: {"using":"accessibility id","value":"Edit profile"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff0000032a/displayed - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-ffff-ffff0000033e/displayed - {}
 RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/screenshot - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/screenshot - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/action_bar_username_container"}
-RESULT: {"using":"id","value":"com.instagram.android:id/action_bar_username_container"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff00000229/elements - {"using":"class name","value":"android.widget.TextView"}
-RESULT: {"using":"class name","value":"android.widget.TextView"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff0000022b/text - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_header_name_and_bio_upsell"}
-RESULT: {"using":"id","value":"com.instagram.android:id/profile_header_name_and_bio_upsell"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff00000296/elements - {"using":"class name","value":"android.widget.TextView"}
-RESULT: {"using":"class name","value":"android.widget.TextView"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff00000296/elements - {"using":"class name","value":"android.widget.TextView"}
-RESULT: {"using":"class name","value":"android.widget.TextView"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff00000297/text - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_header_post_count_front_familiar"}
-RESULT: {"using":"id","value":"com.instagram.android:id/profile_header_post_count_front_familiar"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff00000287/attribute/content-desc - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff00000287/elements - {"using":"class name","value":"android.widget.TextView"}
-RESULT: {"using":"class name","value":"android.widget.TextView"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff00000288/text - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_header_followers_stacked_familiar"}
-RESULT: {"using":"id","value":"com.instagram.android:id/profile_header_followers_stacked_familiar"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff0000028a/attribute/content-desc - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_header_following_stacked_familiar"}
-RESULT: {"using":"id","value":"com.instagram.android:id/profile_header_following_stacked_familiar"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff0000028d/attribute/content-desc - {}
-RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Options"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Options"}
 RESULT: {"using":"accessibility id","value":"Options"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-ffff-ffff00000234/click - {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-ffff-ffff00000238/click - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Back"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Back"}
 RESULT: {"using":"accessibility id","value":"Back"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-0000-000600000332/displayed - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-0000-000600000346/displayed - {}
 RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/screenshot - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/screenshot - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/window/rect - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/window/rect - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/execute/sync - {"script":"<script> [19 bytes]","args":[{}]}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/execute/sync - {"script":"<script> [19 bytes]","args":[{}]}
 RESULT: {"script":"<script> [19 bytes]","args":[{}]}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Back"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Back"}
 RESULT: {"using":"accessibility id","value":"Back"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-0000-000600000332/displayed - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-0000-000600000346/displayed - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Back"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Back"}
 RESULT: {"using":"accessibility id","value":"Back"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-0000-000600000332/rect - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-0000-000600000346/rect - {}
 RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-0000-000600000332/rect - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-0000-000600000346/rect - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {"actions":[{"id":"pointer1","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {"actions":[{"id":"pointer1","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
 RESULT: {"actions":[{"id":"pointer1","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
-COMMAND: DELETE /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {}
+COMMAND: DELETE /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {"actions":[{"id":"pointer2","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {"actions":[{"id":"pointer2","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
 RESULT: {"actions":[{"id":"pointer2","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
-COMMAND: DELETE /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {}
+COMMAND: DELETE /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {"actions":[{"id":"pointer3","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {"actions":[{"id":"pointer3","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
 RESULT: {"actions":[{"id":"pointer3","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
-COMMAND: DELETE /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {}
+COMMAND: DELETE /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {"actions":[{"id":"pointer4","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {"actions":[{"id":"pointer4","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
 RESULT: {"actions":[{"id":"pointer4","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
-COMMAND: DELETE /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {}
+COMMAND: DELETE /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {"actions":[{"id":"pointer5","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {"actions":[{"id":"pointer5","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
 RESULT: {"actions":[{"id":"pointer5","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
-COMMAND: DELETE /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {}
+COMMAND: DELETE /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {"actions":[{"id":"pointer6","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {"actions":[{"id":"pointer6","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
 RESULT: {"actions":[{"id":"pointer6","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
-COMMAND: DELETE /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {}
+COMMAND: DELETE /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {"actions":[{"id":"pointer7","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {"actions":[{"id":"pointer7","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
 RESULT: {"actions":[{"id":"pointer7","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
-COMMAND: DELETE /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {}
+COMMAND: DELETE /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {"actions":[{"id":"pointer8","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {"actions":[{"id":"pointer8","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
 RESULT: {"actions":[{"id":"pointer8","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
-COMMAND: DELETE /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {}
+COMMAND: DELETE /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {"actions":[{"id":"pointer9","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {"actions":[{"id":"pointer9","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
 RESULT: {"actions":[{"id":"pointer9","type":"pointer","parameters":{"pointerType":"touch"},"actions":[{"type":"pointerMove","button":0,"x":360,"y":893,"duration":100,"origin":"viewport"},{"type":"pointerDown","button":0},{"type":"pause","duration":80},{"type":"pointerMove","button":0,"x":360,"y":337,"duration":450,"origin":"viewport"},{"type":"pause","duration":80},{"type":"pointerUp","button":0}]}]}
-COMMAND: DELETE /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/actions - {}
+COMMAND: DELETE /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/actions - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-0000-016b00000332/displayed - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-0000-016a00000346/displayed - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-0000-016b00000332/displayed - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-0000-016a00000346/displayed - {}
 RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/screenshot - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/screenshot - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").text(\"Log out\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0182-0000-016b00000332/click - {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-0199-0000-016a00000346/click - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
 RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
 RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
 RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0183-ffff-ffff0000033a/displayed - {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-019a-ffff-ffff0000034e/displayed - {}
 RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/screenshot - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/screenshot - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
 RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0183-ffff-ffff0000033a/displayed - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-019a-ffff-ffff0000034e/displayed - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
 RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0183-ffff-ffff0000033a/text - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-019a-ffff-ffff0000034e/text - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/negative_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/negative_button"}
 RESULT: {"using":"id","value":"com.instagram.android:id/negative_button"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0183-ffff-ffff00000340/click - {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-019a-ffff-ffff00000354/click - {}
 RESULT: {}
 COMMAND: waitUntil - undefined
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
 RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0184-ffff-ffff00000362/displayed - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-019b-ffff-ffff00000376/displayed - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
 RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0184-ffff-ffff00000362/text - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-019b-ffff-ffff00000376/text - {}
 RESULT: {}
 RESULT: undefined
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/screenshot - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/screenshot - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
 RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0184-ffff-ffff00000362/displayed - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-019b-ffff-ffff00000376/displayed - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
 RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0184-ffff-ffff00000362/text - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-019b-ffff-ffff00000376/text - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
 RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0184-ffff-ffff00000362/click - {}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-019b-ffff-ffff00000376/click - {}
 RESULT: {}
 COMMAND: waitUntil - undefined
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
 RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
 RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
 RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
 RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
 RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
 RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
 RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
 RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
-RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
 RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
 RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
 RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
 RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0187-ffff-ffff0000041e/displayed - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-019e-ffff-ffff00000432/displayed - {}
 RESULT: {}
 RESULT: undefined
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/screenshot - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/screenshot - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 COMMAND: waitUntil - undefined
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
 RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/element/00000000-0000-0187-ffff-ffff0000041e/displayed - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-019e-ffff-ffff00000432/displayed - {}
 RESULT: {}
 RESULT: undefined
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/source - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/source - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
 RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
-COMMAND: GET /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/screenshot - {}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/screenshot - {}
 RESULT: {}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
 RESULT: {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"accessibility id","value":"Home"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Home"}
 RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
 RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
 RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
 RESULT: {"using":"accessibility id","value":"Home"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
-RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/feed_tab"}
 RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
-COMMAND: POST /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
 RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
-COMMAND: DELETE /session/6bb9b0f0-f010-478d-b448-7f38ea429a4b - {}
+RESULT: {"using":"id","value":"com.instagram.android:id/feed_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/clips_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/clips_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/direct_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/direct_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/search_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/search_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/profile_tab"}
+RESULT: {"using":"id","value":"com.instagram.android:id/profile_tab"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: waitUntil - undefined
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+RESULT: {"using":"id","value":"com.android.permissioncontroller:id/grant_dialog"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"id","value":"com.instagram.android:id/primary_button"}
+RESULT: {"using":"id","value":"com.instagram.android:id/primary_button"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+RESULT: {"using":"xpath","value":"//android.widget.Button[@content-desc='Not now' or @text='Not now' or @text='Not Now' or @content-desc='Not Now']"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"accessibility id","value":"Username, email or mobile number,"}
+RESULT: {"using":"accessibility id","value":"Username, email or mobile number,"}
+COMMAND: POST /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/elements - {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+RESULT: {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.Button\").description(\"Use another profile\")"}
+COMMAND: GET /session/f43abe0e-d578-42ec-bdcd-5eac7745a592/element/00000000-0000-019e-ffff-ffff00000432/displayed - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: DELETE /session/f43abe0e-d578-42ec-bdcd-5eac7745a592 - {}
 RESULT: {}
 ]]></system-out>
     </testcase>

@@ -1,13 +1,13 @@
 {
   "name": "Login",
   "slug": "login",
-  "start": "2026-10-27T10:59:06.658Z",
+  "start": "2026-10-27T16:50:17.323Z",
   "tests": [
     {
       "title": "logs in with valid credentials",
-      "status": "failed",
-      "duration": 62898,
-      "steps": 7
+      "status": "passed",
+      "duration": 146158,
+      "steps": 15
     }
   ]
 }

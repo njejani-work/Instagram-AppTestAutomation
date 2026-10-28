@@ -64,10 +64,20 @@ class LoginPage {
   }
 
   /** Screen 2: decline saving login info. */
-  async dontSaveLoginInfo(timeout = 30000) {
-    await this.notNowBtn.waitForDisplayed({ timeout, timeoutMsg: '"Save your login info?" prompt did not appear' });
-    await this.notNowBtn.click();
-    await this.notNowBtn.waitForDisplayed({ reverse: true, timeout: 10000 });
+  /**
+   * After tapping Log in: if "Save your login info?" shows, tap "Not now".
+   * The prompt is optional – Instagram skips it sometimes – so this also succeeds when
+   * the app goes straight to the main tabs.
+   */
+  async dontSaveLoginInfo(timeout = 45000) {
+    const inApp = () => $('id=com.instagram.android:id/feed_tab').isDisplayed();
+    await browser.waitUntil(async () => (await this.notNowBtn.isDisplayed()) || (await inApp()), {
+      timeout, interval: 700, timeoutMsg: 'Neither the save-login prompt nor the home feed appeared after login',
+    });
+    if (await this.notNowBtn.isDisplayed()) {
+      await this.notNowBtn.click();
+      await this.notNowBtn.waitForDisplayed({ reverse: true, timeout: 10000 });
+    }
   }
 
   /** After tapping Log in with bad credentials: wait for the error, return its text. */

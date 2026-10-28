@@ -1,9 +1,19 @@
 // wdio.conf.js – Instagram (Android native app) on a local emulator via Appium
+import 'dotenv/config';                                   // optional .env file (credentials, device)
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
+import { RUN_ID, RUN_DIR, RUNS_DIR } from './test/helpers/run.js';   // must be first: fixes the run id
 import { installPermissionGuard, denyPermissionPopupIfShown } from './test/helpers/permissions.js';
+import {
+  installLogging, logCommand, registerSecrets, startTest, endTest, recordHookFailure, flushSuites,
+} from './test/helpers/evidence.js';
+import { buildDashboard } from './tools/build-dashboard.mjs';
+import { users } from './test/data/users.js';
 
 const env = process.env;
+const KEEP_RUNS = Number(env.KEEP_RUNS || 30);       // run history shown in the dashboard
+const LOG_DIR = path.join(RUN_DIR, 'logs');
 
 export const config = {
   // ====================
@@ -18,7 +28,7 @@ export const config = {
       args: {
         address: '127.0.0.1',
         port: 4723,
-        log: './logs/appium.log',
+        log: path.join(LOG_DIR, 'appium.log'),
       },
     }],
   ],
@@ -69,7 +79,7 @@ export const config = {
   // Test configuration
   // ===================
   logLevel: env.LOG_LEVEL || 'warn',
-  outputDir: './logs',
+  outputDir: LOG_DIR,                  // wdio worker logs, kept per run
   bail: 0,
   waitforTimeout: 15000,
   connectionRetryTimeout: 180000,
@@ -86,12 +96,12 @@ export const config = {
   reporters: [
     'spec',
     ['junit', {
-      outputDir: './reports/junit',
+      outputDir: path.join(RUN_DIR, 'junit'),
       outputFileFormat: ({ cid }) => `results-${cid}.xml`,
     }],
     ['allure', {
       outputDir: './allure-results',
-      disableWebdriverStepsReporting: true,      // don't log every single command
+      disableWebdriverStepsReporting: true,        // don't log every single command
       disableWebdriverScreenshotsReporting: false, // attach every screenshot taken
     }],
   ],
@@ -100,46 +110,89 @@ export const config = {
   // Hooks
   // =====
 
-  /** Clean old results once before all workers start. */
-  onPrepare() {
-    for (const dir of ['./allure-results', './reports/junit', './reports/failures']) {
-      fs.rmSync(dir, { recursive: true, force: true });
+  /** Launcher, once: create this run's folder, record what was run, prune old runs. */
+  onPrepare(cfg) {
+    fs.rmSync('./allure-results', { recursive: true, force: true });
+    fs.mkdirSync(LOG_DIR, { recursive: true });
+
+    const args = process.argv.slice(2).join(' ');
+    fs.writeFileSync(path.join(RUN_DIR, 'run.json'), JSON.stringify({
+      runId: RUN_ID,
+      status: 'running',
+      startedAt: new Date().toISOString(),
+      command: `wdio ${args}`.trim(),
+      suite: (args.match(/--suite[ =](\S+)/g) || []).map((s) => s.split(/[ =]/)[1]).join(', ') || undefined,
+      spec: (args.match(/--spec[ =](\S+)/g) || []).map((s) => s.split(/[ =]/)[1]).join(', ') || undefined,
+      grep: args.match(/--mochaOpts\.grep[ =]"?([^"]+)"?/)?.[1],
+      host: os.hostname(),
+      user: os.userInfo().username,
+      node: process.version,
+      ci: Boolean(env.CI),
+      label: env.RUN_LABEL,             // optional free text, e.g. "build 1.4.2"
+    }, null, 2));
+
+    // Keep the newest KEEP_RUNS runs (this one included)
+    const old = fs.existsSync(RUNS_DIR) ? fs.readdirSync(RUNS_DIR).filter((d) => d !== RUN_ID).sort().reverse() : [];
+    for (const d of old.slice(Math.max(0, KEEP_RUNS - 1))) {
+      fs.rmSync(path.join(RUNS_DIR, d), { recursive: true, force: true });
     }
-    fs.mkdirSync('./logs', { recursive: true });
   },
 
-  /** Make sure the Instagram app is in the foreground before tests start. */
+  /** Worker, once per spec file. */
   async before() {
     await driver.setTimeout({ implicit: 0 });
     try {
       await driver.activateApp('com.instagram.android');
     } catch { /* already in foreground */ }
 
+    registerSecrets([users.valid.password, users.invalid.password]);   // masked in every log/report
+    installLogging();
+
     // Deny the notification-permission popup whenever it appears during any wait.
     // Set DENY_ALL_PERMISSIONS=true to deny every runtime-permission popup, not just notifications.
     installPermissionGuard({ only: env.DENY_ALL_PERMISSIONS === 'true' ? null : /notif/i });
   },
 
-  /** Also check at the start of every test (popup can be up from the previous test). */
-  async beforeTest() {
-    await denyPermissionPopupIfShown();
+  async beforeTest(test) {
+    startTest(test);
+    await denyPermissionPopupIfShown();     // popup can still be up from the previous test
   },
 
-  /**
-   * Any failing test (also in specs without step evidence) → save a screenshot
-   * to reports/failures and attach it to Allure.
-   */
-  async afterTest(test, context, { passed }) {
-    if (passed) return;
-    const dir = './reports/failures';
-    fs.mkdirSync(dir, { recursive: true });
-    const name = `${test.parent} - ${test.title}`.replace(/[^a-z0-9-]+/gi, '_').slice(0, 120);
-    await driver.saveScreenshot(path.join(dir, `${name}.png`));
+  async afterTest(test, context, result) {
+    await endTest(test, result);
   },
 
-  onComplete(exitCode) {
-    console.log('\nScreenshot evidence: reports/screenshots/index.html');
-    console.log('JUnit XML:           reports/junit/');
-    console.log('Allure report:       npm run report:allure\n');
+  /** A failing before/after hook is recorded on the dashboard too (with screenshot + error). */
+  async afterHook(test, context, { error }, hookName) {
+    if (error) await recordHookFailure(test, hookName, error);
+  },
+
+  afterCommand(commandName, args, result, error) {
+    logCommand(commandName, args, result, error);
+  },
+
+  after() {
+    flushSuites();
+  },
+
+  /** Launcher, once at the end: close the run record and rebuild the dashboard. */
+  onComplete(exitCode, cfg, caps, results) {
+    const file = path.join(RUN_DIR, 'run.json');
+    const run = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : { runId: RUN_ID };
+    run.finishedAt = new Date().toISOString();
+    run.durationMs = Date.parse(run.finishedAt) - Date.parse(run.startedAt || run.finishedAt);
+    run.exitCode = exitCode;
+    run.status = exitCode === 0 ? 'passed' : 'failed';
+    run.specFiles = results;           // { finished, passed, failed, retries }
+    fs.writeFileSync(file, JSON.stringify(run, null, 2));
+
+    try {
+      const out = buildDashboard();
+      console.log(`\nDashboard:  ${out}`);
+    } catch (e) {
+      console.error(`Dashboard build failed: ${e.message}`);
+    }
+    console.log(`Run folder: ${RUN_DIR}`);
+    console.log('Open it:    npm run dashboard\n');
   },
 };

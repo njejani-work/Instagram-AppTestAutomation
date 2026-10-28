@@ -67,6 +67,7 @@ class MenuPage extends BasePage {
 
   /** Open the menu from anywhere in the main app (goes via the Profile tab). */
   async open() {
+    if (await this.isLoaded()) return;          // already on the menu (no tab bar here)
     await ProfilePage.open();
     await ProfilePage.openOptions();
     await this.waitForLoad();

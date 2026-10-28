@@ -1,6 +1,10 @@
+@"
 node_modules/
-.gradle/
-build/
-artifacts/
+reports/
+allure-results/
+logs/
+locators/
+handover/
+.env
 *.log
-.DS_Store
+"@ | Set-Content -Encoding utf8 .gitignore
